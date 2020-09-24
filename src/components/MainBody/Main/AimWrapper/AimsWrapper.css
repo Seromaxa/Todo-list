@@ -1,0 +1,168 @@
+
+.aim_list{
+    padding: 0;
+}
+.aim_list>li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.date{
+    margin: 0 3%;
+    position: relative;
+}
+
+.options{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    font-size: 1em;
+    border-radius: 50%;
+    transition: all .2s linear;
+    margin-right: 1%;
+}
+.aim_list>li:hover .options{
+    opacity: 1;
+}
+.options:hover{
+    font-size: 1.5em;
+    text-shadow:3px 4px 3px #314A59 ;
+    box-shadow: 3px 4px 9px #314A59;
+    border: .5px solid white;
+
+}
+.options:active{
+    text-shadow: 1px 1px 3px #314A59 ;
+    box-shadow: inset 3px 4px 9px #314A59;
+}
+/* Переключение  */
+
+.thumb{
+    visibility: hidden;
+}
+.thumb[type="checkbox"]:checked+label,
+.thumb[type="checkbox"]:not(:checked)+label {
+    cursor: pointer;
+    margin: 0 5% 0 0; 
+    position: relative;
+}
+.thumb[type="checkbox"]:checked+label::before,
+.thumb[type="checkbox"]:not(:checked)+label::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: -8px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+}
+.circle[type="checkbox"]:checked+label::before,
+.circle[type="checkbox"]:not(:checked)+label::before {
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    /* left: 10px;
+    top: -25px; */
+}
+
+
+
+.thumb[type="checkbox"]:checked+label::after,
+ .thumb[type="checkbox"]:not(:checked)+label::after {
+    content: " ";
+    width: 14px;
+    height: 6px;
+    border-radius: 1px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 3px;
+    top: -8px;
+    box-shadow: 0.5px 2px 4px rgba(89, 116, 140, .3), inset 0.5px -2px 4px rgba(89, 116, 140, .3);
+    transition: all .2s ease;
+}
+.circle[type="checkbox"]:checked+label::after,
+.circle[type="checkbox"]:not(:checked)+label::after {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: none;
+    border: none;
+    top: -4px;
+    left: 4px;
+
+}
+
+
+
+
+.thumb[type="checkbox"]:not(:checked)+label::after {
+    opacity: 0;
+}
+.thumb[type="checkbox"]:checked+label::after {
+    opacity: 1;
+}
+/* ############################################# */
+.words{
+    max-width: 60%;
+    word-wrap: break-word;
+}
+.options_margin{
+    margin-left: auto;
+   
+}
+
+.category{
+    font-size: .8em;
+    color: rgba(21, 31, 38, 1);
+    margin: 0 0 0 1%;
+    padding-bottom: 2%;
+}
+.words-decor{
+    text-decoration: line-through;
+}
+.test{
+    width: 95%;
+    height: 50px;
+    margin: 2% auto;
+    background-color: rgba(89, 116, 140, .3);
+    color: white;
+    box-shadow: 3px 4px 9px #314A59;
+    border-radius: 5px;
+}
+.impotant{
+    text-shadow: 3px 4px 9px wheat;
+    box-shadow: 5px 7px 5px whitesmoke;
+    border: 1px solid white;
+
+}
+.made{
+    margin: 0 auto;
+}
+.timer{
+    font-size: .9em;
+    color:rgba(21, 31, 38, .7) ;
+}
+.timer .seconds{
+    font-size: .7em;
+}
+.overdue{
+    position: absolute;
+    top: 0;
+    right: -40%;
+    transform: rotate(45deg);
+    text-transform: uppercase;
+    font-size: .8em;
+    color: red;
+    border: .5px solid red;
+    font-family: 'GTA';
+
+   
+}

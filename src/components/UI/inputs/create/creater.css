@@ -1,0 +1,30 @@
+.create-wrapper{
+    position: sticky;
+    top: 0;
+    background-color: #5A758C;
+    border-bottom: 1px solid #152026;
+    height: 70px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+}
+
+.creater{
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid #152026;
+    outline: none;
+    font-size: 1.5em;
+    width: 60%;
+    color: #ADC5D9;
+    text-align: center;
+    margin-right: 4%;
+    margin-bottom: 1%;
+}
+.creater::placeholder{
+    color: #152026;
+    font-style: italic;
+    font-size: 1em;
+    
+}

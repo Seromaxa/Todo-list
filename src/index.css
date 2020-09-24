@@ -1,13 +1,23 @@
+/* @import url('./components/UI/modal/svg/660_pricedown_rus.ttf'); */
+@font-face{
+  font-family: 'GTA';
+  src: local('./components/UI/modal/svg/660_pricedown_rus.ttf');
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif, 'GTA'; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  box-sizing: border-box;
+}
+

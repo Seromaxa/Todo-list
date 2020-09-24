@@ -1,0 +1,90 @@
+.loging{
+position:fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+top: 0;
+bottom: 0;
+width: 100%;
+background: #ecf0f3;
+color: #555;
+z-index: 1000;
+}
+
+.auth-wrapper{
+  width: 40%;
+  border-radius: 15px;
+  background-color:#ecf0f3;
+  box-shadow: 10px 10px 20px #cbced1,
+              -10px -10px 20px #ffffff;
+}
+.auth-wrapper>h1{
+  text-align: center;
+}
+.auth_form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.log_inp>input{
+  width: 100%;
+}
+
+.log_inp{
+  width: 60%;
+  height: 60px;
+}
+.mail, .password{
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 0 0 2% 5%;
+  padding-top:3%;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1,
+  inset -8px -8px 8px #ffffff;
+}
+
+.mail:focus,
+.password:focus{
+  box-shadow:  -8px -8px 8px #ffffff ,
+   8px 8px 8px #cbced1;
+}
+
+
+.button_holder{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+ 
+
+
+}
+.button_holder>button{
+  width: 35%;
+  padding: 2%;
+  border-radius: 25px;
+  border-style: none;
+  color: #555;
+  outline: none;
+  box-shadow: 10px 10px 20px #cbced1,
+  -10px -10px 20px #ffffff;
+}
+.button_holder>button:active{
+  box-shadow: inset 10px 10px 20px #cbced1,
+  inset -10px -10px 20px #ffffff;
+}
+.warning{
+color: red;
+font-size: 12px;
+font-weight: bold;
+text-transform: uppercase;
+padding-left: 5%;
+
+}

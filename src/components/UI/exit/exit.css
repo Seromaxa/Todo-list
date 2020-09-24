@@ -1,0 +1,11 @@
+.exit{
+    position: fixed;
+    bottom: 3%;
+    right: 5%;
+    cursor: pointer;
+ 
+}
+.exit>h1{
+    color: #152026;
+    text-shadow: 3px 4px 3px #314A59;
+}

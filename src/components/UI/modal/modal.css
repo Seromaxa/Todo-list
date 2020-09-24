@@ -1,0 +1,219 @@
+.modal_position{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding-top:4%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(49, 73, 89, .5);
+    visibility: hidden;
+    z-index: 100000;
+}
+.modal_visibility{
+    visibility: visible;
+}
+
+.form_wrapper{
+    width: 40%;
+    background: rgba(89, 116, 140, .8);
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 9px #314A59;
+    overflow: hidden;
+}
+.vision{
+    background: transparent;
+    border-style: none;
+    font-size: 1.2em;
+    width: 80%;
+    color:#ADC5D9;
+    border-bottom: 2px solid #152026;
+    outline: none;
+}
+.change{
+    padding: 2%;
+   
+}
+
+.opt_list{
+    background: rgba(89, 116, 140, .8) ;
+    color: #ADC5D9;
+
+}
+.closer{
+    color: #ADC5D9;
+    position: absolute;
+    margin: 0;
+    top: 3%;
+    right: 3%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.modal-header{
+ width: 100%;
+ height: 40%;
+ position: relative;
+
+}
+.header_img{
+width: 100%;
+height: 100%;
+}
+.checker{
+    visibility: hidden;
+}
+.input_wrapper{
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    height: 100%;
+    padding: 12% 0 2% 0;
+    margin: 0;
+}
+
+.holder_s{
+width:inherit;
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+
+opacity: 0;
+}
+.slider{
+    position: relative;
+    height: 40%;
+    margin-bottom: 5%;
+   
+}
+.controls{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: -16%;
+    left: 0;
+    right: 0;
+}
+.label_circle{
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(89, 116, 140, .8);
+    display: flex;
+    box-shadow: 3px 4px 9px #314A59;
+    position: relative;
+    cursor: pointer;
+    
+}
+.label_circle[name='name']::after,
+.label_circle[name='category']::after,
+.label_circle[name='text']::after,
+.label_circle[name='timer']::after{
+    position: absolute;
+    bottom: -40%;
+}
+.label_circle[name='name']::after{
+    content: 'Название';
+}
+.label_circle[name='category']::after{
+content: 'Категория';
+}
+.label_circle[name='text']::after{
+    content: 'Описание';    
+}
+.label_circle[name='timer']::after{
+    content: 'Таймер';    
+}
+
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4){
+    background-color: whitesmoke;
+    border-color: teal;
+    box-shadow: inset 3px 4px 9px #314A59;
+
+}
+
+
+#slide1:checked ~ .input_wrapper>.slide1,
+#slide2:checked ~ .input_wrapper>.slide2,
+#slide3:checked ~ .input_wrapper>.slide3,
+#slide4:checked ~ .input_wrapper>.slide4{
+    opacity: 1;
+    z-index: 1;
+    
+}
+#textbook,
+#folder,
+#network,
+#timer{
+    width: 40px;
+    fill: black;
+    margin: 0 auto;
+}
+.holder_s .slide4{
+    justify-content: space-evenly;
+}
+.tmr_wrapper{
+    width: 20%;
+}
+.tmr{
+    font-size: 1.5em;
+    margin: 4% 0;
+    color: #ADC5D9;
+    text-align: center;
+    text-shadow:  1px 1px rgba(33, 52, 63, 1);
+
+}
+
+.arrow{
+    transform: rotate(45deg);
+    width: 30px;
+    height: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.up{
+    border-left: 2px solid  rgba(173, 196, 216, .5);
+    border-top: 2px solid  rgba(173, 196, 216, .5);
+    box-shadow: inset 1px 1px rgba(33, 52, 63, 1);
+}
+.down{
+    border-bottom: 2px solid  rgba(173, 196, 216, .5);
+    border-right: 2px solid  rgba(173, 196, 216, .5);
+    box-shadow: 1px 1px rgba(33, 52, 63, 1);
+}
+
+
+
+
+
+
+/* Color Theme Swatches in Hex */
+.The-Final-Voyage-1-hex { color: #5A758C; }
+.The-Final-Voyage-2-hex { color: #ADC5D9; }
+.The-Final-Voyage-3-hex { color: #223440; }
+.The-Final-Voyage-4-hex { color: #314A59; }
+.The-Final-Voyage-5-hex { color: #152026; }
+
+/* Color Theme Swatches in RGBA */
+.The-Final-Voyage-1-rgba { color: rgba(89, 116, 140, 1); }
+.The-Final-Voyage-2-rgba { color: rgba(173, 196, 216, 1); }
+.The-Final-Voyage-3-rgba { color: rgba(33, 52, 63, 1); }
+.The-Final-Voyage-4-rgba { color: rgba(49, 73, 89, 1); }
+.The-Final-Voyage-5-rgba { color: rgba(21, 31, 38, 1); }
+
+/* Color Theme Swatches in HSLA */
+.The-Final-Voyage-1-hsla { color: hsla(208, 21, 45, 1); }
+.The-Final-Voyage-2-hsla { color: hsla(208, 36, 76, 1); }
+.The-Final-Voyage-3-hsla { color: hsla(202, 30, 19, 1); }
+.The-Final-Voyage-4-hsla { color: hsla(202, 29, 27, 1); }
+.The-Final-Voyage-5-hsla { color: hsla(202, 29, 11, 1); }

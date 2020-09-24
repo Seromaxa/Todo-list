@@ -1,0 +1,41 @@
+.doner{
+    background: #ADC5D9;
+    width: fit-content;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    border-style: none;
+    border: 1px solid rgba(173, 196, 216, 1);
+    color: #152026;
+    text-shadow: 3px 4px 3px #314A59;
+    box-shadow: 3px 4px 9px #314A59;
+    font-size: 1.2em;
+    transition: all .2s linear;
+}
+.subber{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+    background: #ADC5D9;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 3px 4px 9px #314A59;
+    transition: all .2s linear;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+
+.doner:hover{
+    font-size: 1.5em; 
+}
+.doner:active,
+.subber:active{
+    font-size: 1.1em;
+    text-shadow: 1px 1px 3px #314A59;
+    box-shadow: inset 3px 4px 9px #314A59;
+}
+

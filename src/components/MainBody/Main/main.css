@@ -1,0 +1,49 @@
+main{
+    width: 100%;
+    padding-top: 10%;
+    box-sizing: border-box;
+    background: rgba(89, 116, 140, 1);
+    
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    padding-left: 30px;
+    flex-grow: 1;
+    padding-bottom: 10%;
+}
+.link-wrapper{
+    width: 20%;
+    
+}
+.aims-wrapper{
+    width: 50%;
+    margin-left: .5%;
+    
+}
+.link-wrapper,
+.aims-wrapper{
+    border: 1px solid rgba(21, 31, 38, 1);
+    background-color: rgba(173, 196, 216, 1);
+    height: 500px;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 15px -11px 18px 5px #314A59;            
+}
+
+.overfl{
+    overflow-y: auto;
+}
+
+
+.overfl::-webkit-scrollbar{
+   width: 0;
+}
+.list{
+    list-style: none;
+    
+}
+
+.red{
+    color: #BD433C;
+}

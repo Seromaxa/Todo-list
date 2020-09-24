@@ -1,0 +1,14 @@
+.category_wrapper{
+    list-style: none;
+    font-style: italic;
+}
+.category_wrapper>li{
+    cursor: pointer;
+    margin: 3% 0;
+}
+.category_wrapper>li:hover{
+    text-shadow: 3px 4px 3px #314A59;;
+}
+.category_wrapper>li:active{
+    text-shadow: 1px 1px 3px #314A59;;
+}

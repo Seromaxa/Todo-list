@@ -1,0 +1,9 @@
+.navigation{
+    height: 55%;
+    max-height: 55%;
+}
+.link_list>li{
+    display: flex;
+    padding-right:3% ;
+    justify-content: space-between;
+}
